@@ -10,7 +10,7 @@ DB:  PostgreSQL
 
 
 db connection config ->
-cat .\server\blog-server\.env
+cat .\server\blog-server\\.env
 
 
 start ->
