@@ -1,4 +1,5 @@
 import {Column, Model, Table} from "sequelize-typescript";
+import {DataTypes} from "@sequelize/core";
 
 @Table({tableName: 'article'})
 export class Article extends Model{
@@ -14,8 +15,8 @@ export class Article extends Model{
     updatedAt: Date;
     @Column
     user_id: number;
-    // @Column
-    // img: DataTypes.BlobDataType;
+    @Column
+    img: DataTypes.BlobDataType;
     @Column
     category_id: number;
 }

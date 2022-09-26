@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import {DataTypes} from "sequelize";
+import {DataTypes} from "@sequelize/core";
 
 export class CreateArticleDto {
     @IsNotEmpty()
@@ -14,8 +14,8 @@ export class CreateArticleDto {
     readonly change_date: Date;
     @IsNotEmpty()
     readonly user_id: number;
-    // @IsNotEmpty()
-    // readonly img: DataTypes.BlobDataType;
+    @IsNotEmpty()
+    readonly img: DataTypes.BlobDataType;
     @IsNotEmpty()
     readonly category_id: number;
 }
