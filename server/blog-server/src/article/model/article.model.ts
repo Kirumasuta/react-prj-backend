@@ -16,7 +16,7 @@ export class Article extends Model{
     @Column
     user_id: number;
     @Column
-    img: DataTypes.BlobDataType;
+    img: string;
     @Column
     category_id: number;
 }

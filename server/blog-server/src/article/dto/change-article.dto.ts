@@ -1,5 +1,6 @@
 import { IsNotEmpty } from 'class-validator';
 import {DataTypes} from "@sequelize/core";
+import {StringDataType} from "@sequelize/core/types/data-types";
 
 export class ChangeArticleDto {
     @IsNotEmpty()
@@ -15,7 +16,7 @@ export class ChangeArticleDto {
     @IsNotEmpty()
     readonly user_id: number;
     @IsNotEmpty()
-    readonly img: DataTypes.BlobDataType;
+    readonly img: string;
     @IsNotEmpty()
     readonly category_id: number;
 }
